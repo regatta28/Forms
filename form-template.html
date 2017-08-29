@@ -74,15 +74,7 @@
             margin-top: 5px;
             
         }
-        .submit {
-            margin-bottom: 10px;
-            margin-left: 100px;
-            
-        }
-        #form {
-            background-color: lightblue;
-            
-        }
+        
        
       </style>
    </head>
@@ -90,11 +82,16 @@
       <div id="container">
         <div id="form">
             <form>
-             <div class="label">First name: </div><input id="fname" type="text" name="firstname"/>
-             <div class="label">Email:</div> <input id="email" type="email" name="email"/>
-             <div class="label"> Website:</div><input id="website" type="website" name="url"/>
-             <div class="label"> Password:  </div><input id="password" type="password" name="password"/>
-            <input class="submit" type="Submit" value="submit"/>
+             <fieldset>
+                 <legend>Registration</legend>
+                <label for="firstname" class="field">First name: </label><input id="fname" type="text" name="firstname"/>
+                <label for="email" class="field">Email:</label> <input id="email" type="email" name="email"/>
+                <label for="telephone" class="field">Telephone:</label><input id="telephone" type="telephone" name="telephone"/>
+                <label for="website" class="field">Website:</label><input id="website" type="url" name="website"/>
+                <label for="password" class="field">Password:</label><input id="password" type="password" name="password"/>
+                <label for="submit" class="field">Submit:</label><input id="submit" type="submit" value="submit"/>
+                
+            </fieldset>
             </form>
         </div>
     </div>
