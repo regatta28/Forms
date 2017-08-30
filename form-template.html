@@ -106,25 +106,25 @@
               <h1>Registration</h1>
               <fieldset class="input-boxes">
                 <label for="firstname" class="field">First name:<span class="asterix">*</span></label>
-                <input id="fname" autocomplete="on" type="text" name="firstname" required="" placeholder="Enter your first name"/>
+                <input id="firstname" autocomplete="on" type="text" name="firstname" required="" placeholder="Enter your first name"/>
                 <label for="email" class="field">Email:<span class="asterix">*</span></label>
                 <input id="email" autocomplete="on" type="email" name="email" required="" autofocus placeholder="Enter your email"/>
                 <label for="date" class="field">Date:</label>
-                <input type="date" name="date" placeholder="Enter date">
+                <input id="date" type="date" name="date">
                 <label for="age" class="field">Age:</label>
                 <input id="age" type="number" min="18" max="60" name="age" placeholder="18-60"/>
                 <label for="telephone" class="field">Telephone:</label>
-                <input id="telephone" autocomplete="on" type="telephone" name="telephone" pattern="[0-9]{10}" title="Number must be 10 digits long" placeholder="08* *** ****"/>
+                <input id="telephone" type="tel" name="telephone" pattern="[0-9]{10}" title="Number must be 10 digits long" placeholder="08* *** ****"/>
                 <label for="postcode" class="field">Postcode:</label>
                 <input id="postcode" type="text" name="postcode" pattern="[A-Z][0-9]{2}[A-Z][0-9]{3}" title="Uppercase, two numbers, Uppercase, 3 numbers" placeholder="Enter your postcode"/>
                 <label for="passport" class="field">Passport Number:</label>
-                <input name="passport" type="text" pattern="[A-Z]{2}[0-9]{6}" title="Two uppercase letters followed by six numbers" placeholder="Enter your passport number"/>
+                <input id="passport" name="passport" type="text" pattern="[A-Z]{2}[0-9]{6}" title="Two uppercase letters followed by six numbers" placeholder="Enter your passport number"/>
                 <label for="website" class="field">Website:</label>
                 <input id="website" type="url" name="website" placeholder="Enter Url"/>
                 <label for="password" class="field">Password:<span class="asterix">*</span></label>
                 <input id="password" type="password" name="password" required="" placeholder="Minimum 8 characters"/>
-                <label for="creditCard" class="field"/>Credit/Debit card number:<span class="asterix">*</span></label>
-                <input id="creditCard" type="number" name="creditCard" required="" pattern="[0-9]{16}" placeholder="Enter your 16 digit number"/>
+                <label for="creditCard" class="field">Credit/Debit card number:<span class="asterix">*</span></label>
+                <input id="creditCard" type="number" name="creditCard" required="" placeholder="Enter your 16 digit number"/>
               </fieldset>
               <fieldset id="checkbox">
                     <legend>Menu Options:</legend>
@@ -149,7 +149,7 @@
               </fieldset>
               <fieldset id="dropdown">
                     <legend>Zodiac sign:</legend>
-                     <select id="dropdown">
+                     <select id="Zodiac">
                         <optgroup label="Fire">
                                 <option value="aries">Aries</option>
                                 <option value="leo">Leo</option>
@@ -191,7 +191,7 @@
                 <label for="submit" class="field"></label>
                 <input id="submit" type="submit" value="Submit"/>
                 
-              </fieldset>
+              
             </form>
         </div>
     </div>
